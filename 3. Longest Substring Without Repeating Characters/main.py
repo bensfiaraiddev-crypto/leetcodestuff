@@ -13,7 +13,7 @@ class Solution:
         left = 0
         for right in range(len(s)):
             print(char_set)
-            if s[right] in char_set:
+            while s[right] in char_set:
                 char_set.remove(s[right])
                 left +=1
 
